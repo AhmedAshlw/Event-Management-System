@@ -7,7 +7,6 @@ const eventSchema = new mongoose.Schema({
   },
   Date: {
     type: Date,
-    required: true,
   },
   time: {
     type: String,
@@ -17,11 +16,10 @@ const eventSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  Description: {
+  description: {
     type: String,
-    required: true,
   },
-});
+}, { timestamps: true });
 
 const userSchema = mongoose.Schema({
   username: {
