@@ -9,6 +9,7 @@
   <body>
     <%- include('../partials/_navbar.ejs') %>
     <h1>Welcome to my Events</h1>
+    <a href="/users/<%= user._id %>/users/index" class="btn2">Explore Our Community</a>
     <a href="/users/<%= user._id %>/events/new" class="btn2">Add an Item</a>
 
     <div class="info">
