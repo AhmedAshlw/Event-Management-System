@@ -1,6 +1,6 @@
 # Event Management System
 
-## Date: 28/7/2024
+### Date: 28/7/2024
 
 ### By: Ahmed Darwish
 
@@ -11,6 +11,12 @@
 #### Event Management System (EMS) is a digital tool that streamlines the planning, organization, and execution of events
 ***
 
+### Technologies Used
+* HTML
+* CSS
+* JAVASCRIPT (Node.js)
+***
+
 ### User Story
 
 1. User can create a new event and provide details such as the event name, date, time, location, and description.
@@ -19,29 +25,14 @@
 4. User can make updates to the event details and agenda as needed leading up to the event date.
 
 ### ERD
+![](./img/ERD.PNG)
 
-### Main Functionalities
+
+### Getting Started
 ```
 
 ```
 
-### Implementaion
-
-1 . Functions
-
-```
-A . 
-B . 
-```
-2 . Listeners
-
-```
-A . 
-B .
-C .
-D . 
-```
-***
 
 ### ***Screenshots***
 
