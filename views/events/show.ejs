@@ -9,25 +9,29 @@
   <body>
     <%- include('../partials/_navbar.ejs') %>
     <h1><%= event.name %></h1>
-    <ul>
-      <li>
-         <%= event.name %> 
-      </li>
-      <li>
-        <%= event.Date %> 
-      </li>
-      <li>
-         <%= event.time %> 
-      </li>
-      <li>
-         <%= event.location %> 
-      </li>
-      <li>
-         <%= event.description %> 
-      </li>
-    </ul>
+    <div class="items">
+      <div>
+        <ul>
+          <li>
+            <div class="itemm">Name: </div> <%= event.name %> 
+          </li>
+          <li>
+            <div class="itemm">Date: </div> <%= event.Date %> 
+          </li>
+          <li>
+            <div class="itemm">Time: </div> <%= event.time %> 
+          </li>
+          <li>
+            <div class="itemm">Location: </div> <%= event.location %> 
+          </li>
+          <li>
+            <div class="itemm">Description: </div> <%= event.description %> 
+          </li>
+        </ul>
+      </div>
+    </div>
 
-    <a href="/users/<%= user._id %>/events/<%= event._id %>/edit">Edit this event</a>
+    <a href="/users/<%= user._id %>/events/<%= event._id %>/edit" class="editt">Edit this event</a>
 
     <form
       action="/users/<%= user._id %>/events/<%= event._id %>?_method=DELETE" method="POST">
