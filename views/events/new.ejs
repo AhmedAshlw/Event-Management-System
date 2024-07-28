@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Add New Event</title>
+</head>
+<body>
+    <%- include('../partials/_navbar.ejs') %>
+    <h1>Add New Event</h1>
+
+    <form action="/users/<%= user._id %>/events" method="POST">
+        <div>
+            <label for="name">Event Name</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="date">Event Date</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <div>
+            <label for="time">Event Time</label>
+            <input type="time" name="time" id="time">
+        </div>
+        <div>
+            <label for="location">Event Location</label>
+            <input type="text" name="location" id="location">
+        </div>
+        <div>
+            <label for="description">Event Description</label>
+            <textarea name="description" id="description"></textarea>
+        </div>
+
+        <button type="submit">Add Event</button>
+    </form>
+
+</body>
+</html>

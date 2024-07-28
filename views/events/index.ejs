@@ -9,7 +9,17 @@
   <body>
     <%- include('../partials/_navbar.ejs') %>
     <h1>Welcome to my Events</h1>
+    <a href="/users/<%= user._id %>/events/new">Add an Item</a>
 
+    <ul>
+      <% events.forEach( (evt) => { %>
+        <li>
+          <a href="/users/<%= user._id %>/events/<%= evt._id %>">
+            <%= evt.name %> 
+          </a>
+        </li>
+        <% }) %>
+    </ul>
     
 
   </body>

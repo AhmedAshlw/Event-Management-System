@@ -38,6 +38,7 @@ app.use(
 // LINK TO PUBLIC DIRECTORY
 app.use(express.static(path.join(__dirname, 'public')))
 
+app.use(passUserToView)
 app.get('/', (req, res) => {
   if (req.session.user) {
     res.redirect(`/users/${req.session.user._id}/events`)
@@ -46,7 +47,7 @@ app.get('/', (req, res) => {
   }
 });
 
-app.use(passUserToView)
+
 app.use('/auth', authController);
 app.use(isSignedIn);
 app.use('/users/:userId/events', eventsController);
