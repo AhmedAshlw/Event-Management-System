@@ -9,16 +9,12 @@
 <body>
     <%- include('../partials/_navbar.ejs') %>
     <h1>Community page</h1>
-
-    <ul>
+    <div class="evtCardss">
         <% events.forEach( (evt) => { %>
-        <li>
-            <a href="/users/<%= user._id %>/users/<%= evt._id %>">
-                <%= evt.name %>
-            </a>
-        </li>
+            <div class="evtCard">
+                    <%= evt.name %>
+            </div>
         <% }) %>
-    </ul>
-
+    </div>
 </body>
 </html>
