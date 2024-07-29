@@ -3,10 +3,9 @@ const router = express.Router()
 
 const User = require('../models/user')
 
-
 router.get('/', async (req, res) => {
     try {
-      const currentUser = await User.findById(req.session.user._id)
+      const currentUser = await User.findById(req.session.user._id);
       res.render('events/index.ejs', {
         events: currentUser.events,
       })

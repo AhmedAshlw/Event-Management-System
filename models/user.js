@@ -1,32 +1,5 @@
 const mongoose = require('mongoose');
-
-const eventSchema = new mongoose.Schema({
-  userId: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: 'User',
-  },
-  name: {
-    type: String,
-    required: true,
-  },
-  Date: {
-    type: Date,
-  },
-  time: {
-    type: String,
-    required: true,
-  },
-  location: {
-    type: String,
-    required: true,
-  },
-  description: {
-    type: String,
-  },
-}, { timestamps: true });
-
-
-const Event = mongoose.model('Event', eventSchema);
+const eventSchema = require('./event').schema;
 
 const userSchema = mongoose.Schema({
   username: {
@@ -37,7 +10,7 @@ const userSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  events: [eventSchema]
+  events: [eventSchema],
 });
 
 const User = mongoose.model('User', userSchema);
