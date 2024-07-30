@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title><%= event.name %></title>
+  </head>
+  <body>
+    <nav>
+    <a href="/users/<%=user._id%>/events" class="btn">View my Events</a>
+    <a href="/users/<%= user._id %>/Community/" class="btn">View Community</a>
+    </nav>
+    <h1><%= event.name %></h1>
+    <div class="items">
+      <div>
+        <ul>
+          <li>
+            <div class="itemm">Name: </div> <%= event.name %> 
+          </li>
+          <li>
+            <div class="itemm">Date: </div> <%= event.Date %> 
+          </li>
+          <li>
+            <div class="itemm">Time: </div> <%= event.time %> 
+          </li>
+          <li>
+            <div class="itemm">Location: </div> <%= event.location %> 
+          </li>
+          <li>
+            <div class="itemm">Description: </div> <%= event.description %> 
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -34,13 +34,23 @@ form {
 .btn2{
     background-color: #1E90FF;
     color: black;
-    margin-top: 10px;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     border-radius: 8px;
     font-size: 18px;
+}
+
+.btn3{
+    background-color: #DAA520;
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 90px;
+    height: 90px;
+    margin: 0;
+    padding: 0;
 }
 
 button {
@@ -80,17 +90,25 @@ ul {
     color: black;
 }
 
-.info{
-    width: 800px;
-    min-height: 150px;
+.myEvents{
+    width: 650px;
+    min-height: 300px;
     background-color: #5F9EA0;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: start;
+    align-items: center;
     flex-wrap: wrap;
     margin-top: 20px;
     border-radius: 8px;
     font-size: 20px;
+}
+
+.infoSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
 }
 .infoinfo{
     background-color: #555555;
@@ -102,6 +120,19 @@ ul {
     display: inline-block;
     border-radius: 8px;
     margin: 10px;
+}
+.regEvents{
+    width: 650px;
+    min-height: 300px;
+    background-color: #5F9EA0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 20px;
 }
 
 .editt{
@@ -130,9 +161,31 @@ ul {
     min-height: 200px;
     background-color: #5F9EA0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     border-radius: 8px;
     font-size: 20px;
     margin: 10px;
 }
+.Fbtn3{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.eventsSpace{
+    width: 1330px;
+    min-height: 430px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+ 
+p{
+    font-size: 30px;
+}
+

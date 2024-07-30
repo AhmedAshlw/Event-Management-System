@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const eventSchema = require('./event').schema;
+const rEventSchema = require('./registeredEvents').schema;
 
 const userSchema = mongoose.Schema({
   username: {
@@ -11,6 +12,7 @@ const userSchema = mongoose.Schema({
     required: true,
   },
   events: [eventSchema],
+  registeredEvents: [rEventSchema],
 });
 
 const User = mongoose.model('User', userSchema);
