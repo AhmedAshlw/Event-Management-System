@@ -8,11 +8,12 @@ router.get('/', async (req, res) => {
     const currentUser = await User.findById(req.session.user._id);
     // const currentUser = await User.find({})
     if (currentUser) {
-        res.render('community/index.ejs', { events: currentUser.events });
+
+        res.render('community/index.ejs', { events: currentUser.events, registeredEvents: currentUser.registeredEvents });
     } else {
         res.render('community/index.ejs', { events: [] });
     }
-    res.render('community/index.ejs', { events: currentUser.events })
+    res.render('community/index.ejs', { events: currentUser.events, registeredEvents: currentUser.registeredEvents})
     // const events = await Events.find({})
 })
 
@@ -29,10 +30,21 @@ router.get('/:eventsId', async (req, res) => {
 
   router.post('/:eventsId', async (req, res) => {
     try {
-      const currentUser = await User.findById(req.session.user._id)
-      currentUser.registeredEvents.push(req.session.user._id)
+      const currentUser = await User.findById(req.session.user._id);
+      const eventId = req.params.eventsId
+      // console.log(eventId)
+      const event = await Event.findById(eventId)
+      console.log(event)
+      currentUser.registeredEvents.push(event)
+      // currentUser.events.push(event)
       await currentUser.save()
-      res.redirect(`/users/${currentUser._id}/events`)
+      // console.log(currentUser.registeredEvents)
+      res.render('community/show.ejs', { event })
+
+      // res.redirect(`/users/${currentUser._id}/events`);
+      // res.render(`/users/${currentUser._id}/events`, {registeredEvents: currentUser.registeredEvents})
+      // res.render('community/index.ejs', { registeredEvents: currentUser.events });
+
     } catch (error) {
       console.log(error)
       res.redirect('/')

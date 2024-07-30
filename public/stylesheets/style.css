@@ -188,4 +188,7 @@ ul {
 p{
     font-size: 30px;
 }
-
+#registerBtn.registered {
+    background-color: green;
+    color: white;
+  }
