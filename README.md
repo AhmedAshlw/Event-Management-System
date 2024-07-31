@@ -24,7 +24,7 @@
 3. User can view registered event details.
 
 ### ERD
-![](./img/ERD.PNG)
+![](./images/ERD.PNG)
 
 
 ### Getting Started

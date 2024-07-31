@@ -39,6 +39,7 @@ app.use(
 
 // LINK TO PUBLIC DIRECTORY
 app.use(express.static(path.join(__dirname, 'public')))
+app.use('/images', express.static('images'));
 
 app.use(passUserToView)
 app.get('/', (req, res) => {

@@ -9,16 +9,71 @@ body {
     align-items: center;
 }
 
+.welcome{
+    width: 800px;
+    height: 400px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    margin-top: 40px;
+}
+.subtitle{
+    color: #0a85cc;
+}
+img{
+    width: 400px;
+    height: 360px;
+}
+
 form {
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    justify-content: center;
+    width: 500px;
+    height: 250px;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     padding: 8px;
     border-radius: 5px;
+    margin-top: 20px;
 }
 
+.signin{
+    margin-top: 40px;
+}
+.signup{
+    margin-top: 40px;
+}
+
+#username{
+    height: 30px;
+    font-size: 18px;
+}
+#username:focus{
+    background-color: #a5e1f3;
+}
+#password{
+    height: 30px;
+    font-size: 18px;
+}
+#password:focus{
+    background-color: #a5e1f3;
+}
+#confirmPassword{
+    height: 30px;
+    font-size: 18px;
+}
+#confirmPassword:focus{
+    background-color: #a5e1f3;
+}
+label{
+    font-size: 18px;
+    display: flex;
+    justify-content: start;
+}
 .btn {
     background-color: #66CDAA;
     color: black;
