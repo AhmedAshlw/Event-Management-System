@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/stylesheets/style.css" />
+<%- include('../partials/boilerplate.ejs') %>
     <title>My Events</title>
   </head>
   <body>
@@ -28,7 +23,12 @@
          <div class="regEvents">
               <p>Registered Events</p>
               <div class="infoSection">
-                  <% registeredEvents.forEach( (evt) => { %>
+                <% const uniqueEvents = registeredEvents.filter((evt, index, self) =>
+                    index === self.findIndex((t) => (
+                      t.name === evt.name && t.location === evt.location
+                    ))
+                ); %>
+                  <% uniqueEvents.forEach( (evt) => { %>
                     <div class="infoinfo2">
                       <%= evt.name %> <br/>
                       <span><%= evt.location %></span>

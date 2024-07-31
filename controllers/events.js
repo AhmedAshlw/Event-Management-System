@@ -50,6 +50,7 @@ router.delete('/:eventsId', async (req, res) => {
   try {
     const currentUser = await User.findById(req.session.user._id)
     currentUser.events.id(req.params.eventsId).deleteOne()
+    currentUser.registeredEvents.id(req.params.eventsId).deleteOne()
     await currentUser.save()
     res.redirect(`/users/${currentUser._id}/events`)
   } catch (error) {

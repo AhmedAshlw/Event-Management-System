@@ -20,9 +20,8 @@
 ### User Story
 
 1. User can create a new event and provide details such as the event name, date, time, location, and description.
-2. User can set up event registration, including the ability to set ticket registrations.
-3. User can create and manage the event agenda, including scheduling speakers, sessions, and other activities.
-4. User can make updates to the event details and agenda as needed leading up to the event date.
+2. User can view the community page and register for an event.
+3. User can view registered event details.
 
 ### ERD
 ![](./img/ERD.PNG)

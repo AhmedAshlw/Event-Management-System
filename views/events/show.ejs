@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/stylesheets/style.css" />
+<%- include('../partials/boilerplate.ejs') %>
     <title><%= event.name %></title>
   </head>
   <body>
@@ -33,7 +28,7 @@
 
     <a href="/users/<%= user._id %>/events/<%= event._id %>/edit" class="editt">Edit this event</a>
 
-    <form
+    <form 
       action="/users/<%= user._id %>/events/<%= event._id %>?_method=DELETE" method="POST">
       <button type="submit">Delete this event</button>
     </form>

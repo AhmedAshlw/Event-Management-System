@@ -6,15 +6,8 @@ const Event = require('../models/event');
 
 
 router.get('/', async (req, res) => {
-    const currentUser = await User.findById(req.session.user._id);
-    if (currentUser) {
-
-        res.render('community/index.ejs', { events: currentUser.events, registeredEvents: currentUser.registeredEvents });
-    } else {
-        res.render('community/index.ejs', { events: [], registeredEvents: [] });
-    }
-    res.render('community/index.ejs', { events: currentUser.events, registeredEvents: currentUser.registeredEvents})
-    // const events = await Events.find({})
+    const events = await Event.find()
+    res.render('community/index.ejs', { events });
 })
 
 router.get('/:eventsId', async (req, res) => {
