@@ -9,6 +9,7 @@ router.get('/', async (req, res) => {
       const currentUser = await User.findById(req.session.user._id);
       res.render('events/index.ejs', {
         events: currentUser.events,
+        registeredEvents: currentUser.registeredEvents
       })
     } catch (error) {
       console.log(error)

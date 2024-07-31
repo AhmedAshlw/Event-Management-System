@@ -16,6 +16,7 @@ const authController = require('./controllers/auth.js');
 const eventsController = require('./controllers/events.js');
 const communityController = require('./controllers/community.js');
 
+
 const port = process.env.PORT ? process.env.PORT : '3000';
 
 
@@ -53,6 +54,7 @@ app.use('/auth', authController);
 app.use(isSignedIn);
 app.use('/users/:userId/events', eventsController);
 app.use('/users/:userId/community',communityController);
+
 
 
 app.listen(port, () => {

@@ -110,6 +110,7 @@ ul {
     align-items: start;
     flex-wrap: wrap;
 }
+
 .infoinfo{
     background-color: #555555;
     color: white;
@@ -120,6 +121,20 @@ ul {
     display: inline-block;
     border-radius: 8px;
     margin: 10px;
+}
+.infoinfo2{
+    background-color: #DAA520;
+    color: black;
+    margin-top: 10px;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    margin: 10px;
+}
+.infoinfo2 span{
+color: white;
 }
 .regEvents{
     width: 650px;

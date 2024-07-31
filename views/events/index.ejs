@@ -28,7 +28,12 @@
          <div class="regEvents">
               <p>Registered Events</p>
               <div class="infoSection">
-
+                  <% registeredEvents.forEach( (evt) => { %>
+                    <div class="infoinfo2">
+                      <%= evt.name %> <br/>
+                      <span><%= evt.location %></span>
+                    </div>
+                  <% }) %>
               </div> 
          </div>
     </div>
