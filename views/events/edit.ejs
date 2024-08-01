@@ -4,7 +4,7 @@
 <body>
     <%- include('../partials/_navbar.ejs') %>
     <h1>Edit <%= event.name %></h1>
-    <form action="/users/<%= user._id %>/events/<%= event._id %>?_method=PUT" method="POST">
+    <form class="newEvent" action="/users/<%= user._id %>/events/<%= event._id %>?_method=PUT" method="POST">
         <div>
             <label for="name">Event Name</label>
             <input type="text" name="name" id="name" value="<%= event.name %>">

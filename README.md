@@ -23,21 +23,20 @@
 2. User can view the community page and register for an event.
 3. User can view registered event details.
 
+Project on Github: [here](https://github.com/AhmedAshlw/Event-Management-System/tree/main)
+
 ### ERD
 ![](./images/ERD.PNG)
 
 
-### Getting Started
-```
+### Screenshots
 
-```
+***
 
-
-### ***Screenshots***
-
-##### ..
-![]()
-
+### Future Enhancements
+1. Add public and private events
+2. Add tickets to events
+3. Make it responsive on Tablet and Mobile views
 
 ***
 

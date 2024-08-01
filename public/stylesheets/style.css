@@ -40,6 +40,18 @@ form {
     border-radius: 5px;
     margin-top: 20px;
 }
+.newEvent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 350px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
 
 .signin{
     margin-top: 40px;
@@ -47,7 +59,16 @@ form {
 .signup{
     margin-top: 40px;
 }
-
+input{
+    height: 30px;
+    font-size: 18px;
+    display: block;
+}
+textarea{
+    height: 30px;
+    font-size: 18px;
+    display: block;
+}
 #username{
     height: 30px;
     font-size: 18px;
@@ -68,6 +89,10 @@ form {
 }
 #confirmPassword:focus{
     background-color: #a5e1f3;
+}
+.deletebtn{
+    height: 50px;
+    font-size: 18px;
 }
 label{
     font-size: 18px;
