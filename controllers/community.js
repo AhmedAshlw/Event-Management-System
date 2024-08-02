@@ -12,8 +12,7 @@ router.get('/', async (req, res) => {
 
 router.get('/:eventsId', async (req, res) => {
     try {
-      const currentUser = await User.findById(req.session.user._id)
-      const event = currentUser.events.id(req.params.eventsId)
+      const event = await Event.findById(req.params.eventsId)
       res.render('community/show.ejs', { event })
     } catch (error) {
       console.log(error)
@@ -26,8 +25,9 @@ router.get('/:eventsId', async (req, res) => {
       const currentUser = await User.findById(req.session.user._id);
       const eventId = req.params.eventsId
       const event = await Event.findById(eventId)
-      console.log(event)
+      if(!currentUser.registeredEvents.id(req.params.eventsId)){
       currentUser.registeredEvents.push(event)
+      }
       await currentUser.save()
       // res.render('community/show.ejs', { events: currentUser.events, registeredEvents: currentUser.registeredEvents })
 

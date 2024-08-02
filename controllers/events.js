@@ -50,7 +50,10 @@ router.delete('/:eventsId', async (req, res) => {
   try {
     const currentUser = await User.findById(req.session.user._id)
     currentUser.events.id(req.params.eventsId).deleteOne()
+    if(currentUser.registeredEvents.id(req.params.eventsId)){
     currentUser.registeredEvents.id(req.params.eventsId).deleteOne()
+    }
+    //Need to do 'Here' an if statement for deleting events from Community side if deleted from my events side .. 
     await currentUser.save()
     res.redirect(`/users/${currentUser._id}/events`)
   } catch (error) {

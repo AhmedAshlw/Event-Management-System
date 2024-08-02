@@ -23,12 +23,7 @@
          <div class="regEvents">
               <p>Registered Events</p>
               <div class="infoSection">
-                <% const uniqueEvents = registeredEvents.filter((evt, index, self) =>
-                    index === self.findIndex((t) => (
-                      t.name === evt.name && t.location === evt.location
-                    ))
-                ); %>
-                  <% uniqueEvents.forEach( (evt) => { %>
+                  <% registeredEvents.forEach( (evt) => { %>
                     <div class="infoinfo2">
                       <%= evt.name %> <br/>
                       <span><%= evt.location %></span>
