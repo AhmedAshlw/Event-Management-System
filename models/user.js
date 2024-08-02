@@ -1,5 +1,5 @@
-const mongoose = require('mongoose');
-const eventSchema = require('./event').schema;
+const mongoose = require("mongoose");
+const eventSchema = require("./event").schema;
 
 const userSchema = mongoose.Schema({
   username: {
@@ -14,6 +14,6 @@ const userSchema = mongoose.Schema({
   registeredEvents: [eventSchema],
 });
 
-const User = mongoose.model('User', userSchema);
+const User = mongoose.model("User", userSchema);
 
 module.exports = User;

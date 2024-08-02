@@ -1,32 +1,36 @@
 <%- include('../partials/boilerplate.ejs') %>
-    <title>Editing <%= event.name %></title>
-</head>
-<body>
-    <%- include('../partials/_navbar.ejs') %>
-    <h1>Edit <%= event.name %></h1>
-    <form class="newEvent" action="/users/<%= user._id %>/events/<%= event._id %>?_method=PUT" method="POST">
-        <div>
-            <label for="name">Event Name</label>
-            <input type="text" name="name" id="name" value="<%= event.name %>">
-        </div>
-        <div>
-            <label for="Date">Event Date</label>
-            <input type="date" name="Date" id="Date" value="<%= event.Date %>">
-        </div>
-        <div>
-            <label for="time">Event Time</label>
-            <input type="time" name="time" id="time" value="<%= event.time %>">
-        </div>
-        <div>
-            <label for="location">Event Location</label>
-            <input type="text" name="location" id="location" value="<%= event.location %>">
-        </div>
-        <div>
-            <label for="description">Event Description</label>
-            <textarea name="description" id="description" value="<%= event.description %>"></textarea>
-        </div>
-   
-      <button type="submit">Update Event</button>
-    </form>
-</body>
-</html>
+    <title>Editing <%= event.name %>
+    </title>
+    </head>
+
+    <body>
+        <%- include('../partials/_navbar.ejs') %>
+            <h1>Edit <%= event.name %>
+            </h1>
+            <form class="newEvent" action="/users/<%= user._id %>/events/<%= event._id %>?_method=PUT" method="POST">
+                <div>
+                    <label for="name">Event Name</label>
+                    <input type="text" name="name" id="name" value="<%= event.name %>">
+                </div>
+                <div>
+                    <label for="Date">Event Date</label>
+                    <input type="date" name="Date" id="Date" value="<%= event.Date.toISOString().slice(0, 10) %>">
+                </div>
+                <div>
+                    <label for="time">Event Time</label>
+                    <input type="time" name="time" id="time" value="<%= event.time %>">
+                </div>
+                <div>
+                    <label for="location">Event Location</label>
+                    <input type="text" name="location" id="location" value="<%= event.location %>">
+                </div>
+                <div>
+                    <label for="description">Event Description</label>
+                    <textarea name="description" id="description"><%= event.description %></textarea>
+                </div>
+
+                <button type="submit">Update Event</button>
+            </form>
+    </body>
+
+    </html>

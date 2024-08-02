@@ -1,38 +1,42 @@
 <%- include('../partials/boilerplate.ejs') %>
-    <title>My Events</title>
+  <title>My Events</title>
   </head>
+
   <body>
     <%- include('../partials/_navbar.ejs') %>
-    <h1>Welcome to my Events</h1>
-    <a href="/users/<%= user._id %>/Community" class="btn2">Explore Our Community</a>
+      <h1>Welcome to my Events</h1>
+      <a href="/users/<%= user._id %>/Community" class="btn2">Explore Our Community</a>
 
-    <div class="eventsSpace">
+      <div class="eventsSpace">
         <div class="myEvents">
-             <p>My Events</p>
-             <div>
-                  <a href="/users/<%= user._id %>/events/new" class="btn2">Add an Event</a>
-             </div>
-             <div class="infoSection">
-                  <% events.forEach( (evt) => { %>
-                      <a href="/users/<%= user._id %>/events/<%= evt._id %>" class="infoinfo">
-                        <%= evt.name %> 
-                      </a>
-                  <% }) %>
-             </div> 
-         </div>
-         <div class="regEvents">
-              <p>Registered Events</p>
-              <div class="infoSection">
-                  <% registeredEvents.forEach( (evt) => { %>
-                    <div class="infoinfo2">
-                      <%= evt.name %> <br/>
-                      <span><%= evt.location %></span>
-                    </div>
-                  <% }) %>
-              </div> 
-         </div>
-    </div>
-    
+          <p>My Events</p>
+          <div>
+            <a href="/users/<%= user._id %>/events/new" class="btn2">Add an Event</a>
+          </div>
+          <div class="infoSection">
+            <% events.forEach( (evt)=> { %>
+              <a href="/users/<%= user._id %>/events/<%= evt._id %>" class="infoinfo">
+                <%= evt.name %>
+              </a>
+              <% }) %>
+          </div>
+        </div>
+        <div class="regEvents">
+          <p>Registered Events</p>
+          <div class="infoSection">
+            <% registeredEvents.forEach( (evt)=> { %>
+              <div class="infoinfo2">
+                <%= evt.name %> <br />
+                  <span>
+                    <%= evt.location %>
+                  </span>
+              </div>
+              <% }) %>
+          </div>
+        </div>
+      </div>
+
 
   </body>
-</html>
+
+  </html>

@@ -1,36 +1,46 @@
 <%- include('../partials/boilerplate.ejs') %>
-    <title><%= event.name %></title>
+  <title>
+    <%= event.name %>
+  </title>
   </head>
+
   <body>
     <%- include('../partials/_navbar.ejs') %>
-    <h1><%= event.name %></h1>
-    <div class="items">
-      <div>
-        <ul>
-          <li>
-            <div class="itemm">Name: </div> <%= event.name %> 
-          </li>
-          <li>
-            <div class="itemm">Date: </div> <%= event.Date %> 
-          </li>
-          <li>
-            <div class="itemm">Time: </div> <%= event.time %> 
-          </li>
-          <li>
-            <div class="itemm">Location: </div> <%= event.location %> 
-          </li>
-          <li>
-            <div class="itemm">Description: </div> <%= event.description %> 
-          </li>
-        </ul>
+      <h1>
+        <%= event.name %>
+      </h1>
+      <div class="items">
+        <div>
+          <ul>
+            <li>
+              <div class="itemm">Name: </div>
+              <%= event.name %>
+            </li>
+            <li>
+              <div class="itemm">Date: </div>
+              <%= event.Date %>
+            </li>
+            <li>
+              <div class="itemm">Time: </div>
+              <%= event.time %>
+            </li>
+            <li>
+              <div class="itemm">Location: </div>
+              <%= event.location %>
+            </li>
+            <li>
+              <div class="itemm">Description: </div>
+              <%= event.description %>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
 
-    <a href="/users/<%= user._id %>/events/<%= event._id %>/edit" class="editt">Edit this event</a>
+      <a href="/users/<%= user._id %>/events/<%= event._id %>/edit" class="editt">Edit this event</a>
 
-    <form class="deletebtn"
-      action="/users/<%= user._id %>/events/<%= event._id %>?_method=DELETE" method="POST">
-      <button type="submit">Delete this event</button>
-    </form>
+      <form class="deletebtn" action="/users/<%= user._id %>/events/<%= event._id %>?_method=DELETE" method="POST">
+        <button type="submit">Delete this event</button>
+      </form>
   </body>
-</html>
+
+  </html>

@@ -1,34 +1,36 @@
 <%- include('../partials/boilerplate.ejs') %>
     <title>Add New Event</title>
-</head>
-<body>
-    <%- include('../partials/_navbar.ejs') %>
-    <h1>Add New Event</h1>
+    </head>
 
-    <form class="newEvent" action="/users/<%= user._id %>/events" method="POST">
-        <div>
-            <label for="name">Event Name</label>
-            <input type="text" name="name" id="name">
-        </div>
-        <div>
-            <label for="Date">Event Date</label>
-            <input type="date" name="Date" id="Date">
-        </div>
-        <div>
-            <label for="time">Event Time</label>
-            <input type="time" name="time" id="time">
-        </div>
-        <div>
-            <label for="location">Event Location</label>
-            <input type="text" name="location" id="location">
-        </div>
-        <div>
-            <label for="description">Event Description</label>
-            <textarea name="description" id="description"></textarea>
-        </div>
+    <body>
+        <%- include('../partials/_navbar.ejs') %>
+            <h1>Add New Event</h1>
 
-        <button type="submit">Add Event</button>
-    </form>
+            <form class="newEvent" action="/users/<%= user._id %>/events" method="POST">
+                <div>
+                    <label for="name">Event Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div>
+                    <label for="Date">Event Date</label>
+                    <input type="date" name="Date" id="Date">
+                </div>
+                <div>
+                    <label for="time">Event Time</label>
+                    <input type="time" name="time" id="time">
+                </div>
+                <div>
+                    <label for="location">Event Location</label>
+                    <input type="text" name="location" id="location">
+                </div>
+                <div>
+                    <label for="description">Event Description</label>
+                    <textarea name="description" id="description"></textarea>
+                </div>
 
-</body>
-</html>
+                <button type="submit">Add Event</button>
+            </form>
+
+    </body>
+
+    </html>

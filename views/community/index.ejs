@@ -1,21 +1,23 @@
 <%- include('../partials/boilerplate.ejs') %>
     <title>Community page</title>
-</head>
-<body>
-    <%- include('../partials/_navbar.ejs') %>
-    <h1>Community page</h1>
-    <div class="evtCardss">
-        <% events.forEach( (evt) => { %>
-            <div class="evtCard">
-                    <a href="/users/<%= user._id %>/Community/<%= evt._id %>">
-                    <%= evt.name %> 
-                    </a>
-                    <form class="Fbtn3"
-                    action="/users/<%= user._id %>/Community/<%= evt._id %>?_method=Post" method="POST">
-                    <button type="submit" class="btn3" id="registerBtn">Register</button>
-                    </form>
+    </head>
+
+    <body>
+        <%- include('../partials/_navbar.ejs') %>
+            <h1>Community page</h1>
+            <div class="evtCardss">
+                <% events.forEach( (evt)=> { %>
+                    <div class="evtCard">
+                        <a href="/users/<%= user._id %>/Community/<%= evt._id %>">
+                            <%= evt.name %>
+                        </a>
+                        <form class="Fbtn3" action="/users/<%= user._id %>/Community/<%= evt._id %>?_method=Post"
+                            method="POST">
+                            <button type="submit" class="btn3" id="registerBtn">Register</button>
+                        </form>
+                    </div>
+                    <% }) %>
             </div>
-        <% }) %>
-    </div>
-</body>
-</html>
+    </body>
+
+    </html>

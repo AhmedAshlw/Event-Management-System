@@ -1,289 +1,289 @@
 body {
-    background-color: #f2f2f2;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+  background-color: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 
-.welcome{
-    width: 800px;
-    height: 400px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.welcome {
+  width: 800px;
+  height: 400px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.title{
-    margin-top: 40px;
+.title {
+  margin-top: 40px;
 }
-.subtitle{
-    color: #0a85cc;
+.subtitle {
+  color: #0a85cc;
 }
-img{
-    width: 400px;
-    height: 360px;
+img {
+  width: 400px;
+  height: 360px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 500px;
-    height: 250px;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    padding: 8px;
-    border-radius: 5px;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: 250px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 20px;
 }
-.newEvent{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 500px;
-    height: 350px;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    padding: 8px;
-    border-radius: 5px;
-    margin-top: 20px;
+.newEvent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: 350px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
-.signin{
-    margin-top: 40px;
+.signin {
+  margin-top: 40px;
 }
-.signup{
-    margin-top: 40px;
+.signup {
+  margin-top: 40px;
 }
-input{
-    height: 30px;
-    font-size: 18px;
-    display: block;
+input {
+  height: 30px;
+  font-size: 18px;
+  display: block;
 }
-textarea{
-    height: 30px;
-    font-size: 18px;
-    display: block;
+textarea {
+  height: 30px;
+  font-size: 18px;
+  display: block;
 }
-#username{
-    height: 30px;
-    font-size: 18px;
+#username {
+  height: 30px;
+  font-size: 18px;
 }
-#username:focus{
-    background-color: #a5e1f3;
+#username:focus {
+  background-color: #a5e1f3;
 }
-#password{
-    height: 30px;
-    font-size: 18px;
+#password {
+  height: 30px;
+  font-size: 18px;
 }
-#password:focus{
-    background-color: #a5e1f3;
+#password:focus {
+  background-color: #a5e1f3;
 }
-#confirmPassword{
-    height: 30px;
-    font-size: 18px;
+#confirmPassword {
+  height: 30px;
+  font-size: 18px;
 }
-#confirmPassword:focus{
-    background-color: #a5e1f3;
+#confirmPassword:focus {
+  background-color: #a5e1f3;
 }
-.deletebtn{
-    height: 50px;
-    font-size: 18px;
+.deletebtn {
+  height: 50px;
+  font-size: 18px;
 }
-label{
-    font-size: 18px;
-    display: flex;
-    justify-content: start;
+label {
+  font-size: 18px;
+  display: flex;
+  justify-content: start;
 }
 .btn {
-    background-color: #66CDAA;
-    color: black;
-    margin-top: 10px;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 8px;
-    font-size: 18px;
+  background-color: #66cdaa;
+  color: black;
+  margin-top: 10px;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+  font-size: 18px;
 }
 
-.btn2{
-    background-color: #1E90FF;
-    color: black;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 8px;
-    font-size: 18px;
+.btn2 {
+  background-color: #1e90ff;
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+  font-size: 18px;
 }
 
-.btn3{
-    background-color: #DAA520;
-    color: white;
-    border-radius: 8px;
-    font-size: 18px;
-    width: 90px;
-    height: 90px;
-    margin: 0;
-    padding: 0;
+.btn3 {
+  background-color: #daa520;
+  color: white;
+  border-radius: 8px;
+  font-size: 18px;
+  width: 90px;
+  height: 90px;
+  margin: 0;
+  padding: 0;
 }
 
 button {
-    background-color: #04AA6D; 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 8px;
-    margin-top: 10px;
+  background-color: #04aa6d;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 10px;
 }
 
-.items{
-    min-width: 300px;
+.items {
+  min-width: 300px;
 }
 
 ul {
-    list-style-type: none;
-    background-color: #555555;
-    color: white;
-    margin-top: 10px;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    border-radius: 8px;
-    font-size: 20px;
+  list-style-type: none;
+  background-color: #555555;
+  color: white;
+  margin-top: 10px;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border-radius: 8px;
+  font-size: 20px;
 }
-.itemm{
-    display: inline;
-    font-size: 28px;
-    color: black;
-}
-
-.myEvents{
-    width: 650px;
-    min-height: 300px;
-    background-color: #5F9EA0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    border-radius: 8px;
-    font-size: 20px;
+.itemm {
+  display: inline;
+  font-size: 28px;
+  color: black;
 }
 
-.infoSection{
-    display: flex;
-    justify-content: space-around;
-    align-items: start;
-    flex-wrap: wrap;
+.myEvents {
+  width: 650px;
+  min-height: 300px;
+  background-color: #5f9ea0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  border-radius: 8px;
+  font-size: 20px;
 }
 
-.infoinfo{
-    background-color: #555555;
-    color: white;
-    margin-top: 10px;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 8px;
-    margin: 10px;
-}
-.infoinfo2{
-    background-color: #DAA520;
-    color: black;
-    margin-top: 10px;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 8px;
-    margin: 10px;
-}
-.infoinfo2 span{
-color: white;
-}
-.regEvents{
-    width: 650px;
-    min-height: 300px;
-    background-color: #5F9EA0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    border-radius: 8px;
-    font-size: 20px;
+.infoSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-wrap: wrap;
 }
 
-.editt{
-    background-color: #B22222; 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 8px;
-    margin-bottom: 10px;
+.infoinfo {
+  background-color: #555555;
+  color: white;
+  margin-top: 10px;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+  margin: 10px;
 }
-.evtCardss{
-    min-width: 350px;
-    max-width: 1200px;
-    height: 500px;
-    display: flex;
-    justify-content: space-around;
-    align-items: start;
-    flex-wrap: wrap;
+.infoinfo2 {
+  background-color: #daa520;
+  color: black;
+  margin-top: 10px;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+  margin: 10px;
 }
-.evtCard{
-    min-width: 180px;
-    min-height: 200px;
-    background-color: #5F9EA0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 8px;
-    font-size: 20px;
-    margin: 10px;
+.infoinfo2 span {
+  color: white;
 }
-.Fbtn3{
-    width: 100px;
-    height: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.regEvents {
+  width: 650px;
+  min-height: 300px;
+  background-color: #5f9ea0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  border-radius: 8px;
+  font-size: 20px;
 }
 
-.eventsSpace{
-    width: 1330px;
-    min-height: 430px;
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
+.editt {
+  background-color: #b22222;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
- 
-p{
-    font-size: 30px;
+.evtCardss {
+  min-width: 350px;
+  max-width: 1200px;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.evtCard {
+  min-width: 180px;
+  min-height: 200px;
+  background-color: #5f9ea0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 20px;
+  margin: 10px;
+}
+.Fbtn3 {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.eventsSpace {
+  width: 1330px;
+  min-height: 430px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+p {
+  font-size: 30px;
 }
 #registerBtn.registered {
-    background-color: green;
-    color: white;
-  }
+  background-color: green;
+  color: white;
+}
