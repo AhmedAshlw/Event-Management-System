@@ -19,6 +19,7 @@
 - HTML
 - CSS
 - JAVASCRIPT (Node.js, EJS-powered)
+- Heroku
 
 ---
 
@@ -29,6 +30,8 @@
 3. User can view registered event details.
 
 > ### Project on Github: [here](https://github.com/AhmedAshlw/Event-Management-System/tree/main)
+
+> ### Project Deployed: [here](https://event-management-system-ashlw-87142d6f2532.herokuapp.com/)
 
 ---
 
