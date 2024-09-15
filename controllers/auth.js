@@ -35,6 +35,12 @@ router.post("/sign-up", async (req, res) => {
     const hashedPassword = bcrypt.hashSync(req.body.password, 10);
     req.body.password = hashedPassword;
 
+    if (req.body.isAdmin === "on") {
+      req.body.isAdmin = true;
+    } else {
+      req.body.isAdmin = false;
+    }
+
     // All ready to create the new user!
     await User.create(req.body);
 
@@ -68,6 +74,7 @@ router.post("/sign-in", async (req, res) => {
     req.session.user = {
       username: userInDatabase.username,
       _id: userInDatabase._id,
+      isAdmin: userInDatabase.isAdmin,
     };
 
     res.redirect("/");

@@ -5,13 +5,19 @@
   <body>
     <%- include('../partials/_navbar.ejs') %>
       <h1>Welcome to my Events</h1>
-      <a href="/users/<%= user._id %>/Community" class="btn2">Explore Our Community</a>
+      <div>
+        <a href="/users/<%= user._id %>/Community" class="btn2">Explore Our Community</a>
+        <% if (user.isAdmin) { %>
+          <a href="/admin" class="btn4">Admin Dashboard</a>
+          <% } %>
+      </div>
 
       <div class="eventsSpace">
         <div class="myEvents">
           <p>My Events</p>
           <div>
             <a href="/users/<%= user._id %>/events/new" class="btn2">Add an Event</a>
+
           </div>
           <div class="infoSection">
             <% events.forEach( (evt)=> { %>

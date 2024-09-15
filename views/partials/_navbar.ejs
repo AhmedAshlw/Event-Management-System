@@ -1,6 +1,6 @@
 <nav>
   <a href="/" class="btn">Home</a>
-  <% if(user) { %>
+  <% if (user) { %>
     <a href="/users/<%=user._id%>/events" class="btn">View my Events</a>
     <a href="/auth/sign-out" class="btn">Sign Out</a>
     <% } else { %>

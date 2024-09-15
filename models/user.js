@@ -12,6 +12,10 @@ const userSchema = mongoose.Schema({
   },
   events: [eventSchema],
   registeredEvents: [eventSchema],
+  isAdmin: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 const User = mongoose.model("User", userSchema);

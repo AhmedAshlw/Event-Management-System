@@ -122,6 +122,17 @@ label {
   font-size: 18px;
 }
 
+.btn4 {
+  background-color: #daa520;
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
 .btn3 {
   background-color: #daa520;
   color: white;

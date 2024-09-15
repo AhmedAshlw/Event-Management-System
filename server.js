@@ -10,11 +10,13 @@ const path = require("path");
 
 const isSignedIn = require("./middleware/is-signed-in.js");
 const passUserToView = require("./middleware/pass-user-to-view.js");
+const { isAdmin } = require("./middleware/is-Admin.js");
 
 // CONTROLLERS
 const authController = require("./controllers/auth.js");
 const eventsController = require("./controllers/events.js");
 const communityController = require("./controllers/community.js");
+const adminController = require("./controllers/admin.js");
 
 const port = process.env.PORT ? process.env.PORT : "3000";
 
@@ -52,6 +54,7 @@ app.use("/auth", authController);
 app.use(isSignedIn);
 app.use("/users/:userId/events", eventsController);
 app.use("/users/:userId/community", communityController);
+app.use("/admin", isAdmin, adminController);
 
 app.listen(port, () => {
   console.log(`The express app is ready on port ${port}!`);
